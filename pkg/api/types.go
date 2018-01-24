@@ -1774,7 +1774,7 @@ const (
 type PodSpec struct {
 	Volumes []Volume `json:"volumes"`
 	// List of initialization containers belonging to the pod.
-	InitContainers []Container `json:"-"`
+	InitContainers []Container `json:"initContainers"`
 	// List of containers belonging to the pod.
 	Containers []Container `json:"containers"`
 	// +optional
